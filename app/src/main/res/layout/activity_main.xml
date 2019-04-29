@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ImagemResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/padrao" />
+
+    <TextView
+        android:id="@+id/TextoResposta"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma opção abaixo:"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:onClick="selecionarPedra"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/pedra" />
+
+        <ImageView
+            android:onClick="selecionarPapel"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/papel" />
+
+        <ImageView
+            android:onClick="selecionarTesoura"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/tesoura" />
+    </LinearLayout>
+
+</LinearLayout>
